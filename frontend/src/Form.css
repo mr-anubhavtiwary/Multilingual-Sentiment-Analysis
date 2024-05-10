@@ -1,0 +1,16 @@
+.sentiment {
+    height: 20px;
+    position: center;
+    display:flex;
+    justify-content: center;
+    color: rgb(49, 47, 47);
+    font-family: cursive;
+    font-size: 30px;
+    /* text-shadow: 1px 1px 1px rgb(82, 82, 82); */
+}
+
+.text-container{
+    display:flex;
+    justify-content: center;
+    padding: 40px;
+}
