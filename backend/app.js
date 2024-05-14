@@ -7,15 +7,17 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({
-  // origin: 'http://localhost:5173', // Allow requests from this origin
-  origin: 'https://msa-frontend-git-master-anubhav-anands-projects.vercel.app',
-  // https://msa-frontend-git-master-anubhav-anands-projects.vercel.app/
-  // https://msa-two.vercel.app/
-  methods: 'GET,POST',              // Allow only GET and POST requests
-  allowedHeaders: 'Content-Type',   // Allow only specified headers
-}));
+// app.use(cors({
+//   // origin: 'http://localhost:5173', // Allow requests from this origin
+//   // https://msa-frontend-git-master-anubhav-anands-projects.vercel.app/
+//   // https://msa-two.vercel.app/
+//   origin: ['https://msa-frontend-git-master-anubhav-anands-projects.vercel.app'],
+//   methods: ['GET', 'POST'],              // Allow only GET and POST requests
+//   allowedHeaders: ['Content-Type'],   // Allow only specified headers
+//   credentials: true
+// }));
 
+app.use(cors());
 app.post('/api/text', async (req, res) => {
   try {
     const { text } = req.body;
