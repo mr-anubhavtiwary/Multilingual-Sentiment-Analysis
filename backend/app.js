@@ -9,8 +9,9 @@ app.use(express.json());
 
 app.use(cors({
   // origin: 'http://localhost:5173', // Allow requests from this origin
-  origin: 'https://msa-backend.vercel.app',
-  // https://msa-backend.vercel.app/
+  origin: 'https://msa-frontend-git-master-anubhav-anands-projects.vercel.app',
+  // https://msa-frontend-git-master-anubhav-anands-projects.vercel.app/
+  // https://msa-two.vercel.app/
   methods: 'GET,POST',              // Allow only GET and POST requests
   allowedHeaders: 'Content-Type',   // Allow only specified headers
 }));
