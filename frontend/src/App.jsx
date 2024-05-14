@@ -25,8 +25,9 @@ function App() {
     console.log('Form submitted with value:', text);
     
     setMyText(text);
-    const response = await axios.post("http://localhost:3000/api/text",{text});
-
+    // const response = await axios.post("http://localhost:3000/api/text",{text});
+    const response = await axios.post("https://msa-backend.vercel.app/api/text",{text});
+    // https://msa-backend.vercel.app/
     // console.log('Response from Flask:', response.data);
     setTranslatedText(response.data.translatedText);
     setModel(response.data);
