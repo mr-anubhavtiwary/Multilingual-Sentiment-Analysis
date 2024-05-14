@@ -8,7 +8,9 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow requests from this origin
+  // origin: 'http://localhost:5173', // Allow requests from this origin
+  origin: 'https://msa-backend.vercel.app',
+  // https://msa-backend.vercel.app/
   methods: 'GET,POST',              // Allow only GET and POST requests
   allowedHeaders: 'Content-Type',   // Allow only specified headers
 }));
