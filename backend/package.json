@@ -1,6 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "proxy": "https://msa-frontend-git-master-anubhav-anands-projects.vercel.app",
   "description": "Multilingual Sentiment Analysis Project",
   "main": "app.js",
   "scripts": {
